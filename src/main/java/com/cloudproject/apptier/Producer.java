@@ -19,7 +19,7 @@ public class Producer {
 
     private static final String PROJECT_ID = ServiceOptions.getDefaultProjectId();
 
-    private static final String RESPONSE_TOPIC = "request-topic";
+    private static final String RESPONSE_TOPIC = "response-topic";
 
     public void publish(String message) throws Exception {
         ProjectTopicName topicName = ProjectTopicName.of(PROJECT_ID, RESPONSE_TOPIC);
