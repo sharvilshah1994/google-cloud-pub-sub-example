@@ -22,5 +22,6 @@ public class RequestController {
     message to producer accordingly that "user not found". If user found, get the location and find the doctors in
     3 mile radius by getting all the doctors from the database. Making another function here (private) for
     filtering the location. When you get the list of doctors - 1. Send push notification to doctor using
-    Firebase messaging 2. Send text message to doctor using Twilio (Refer zip file sent by runyu)*/
+    Firebase messaging 2. Send text message to doctor using Twilio (Refer zip file sent by runyu)
+    33.3333 123.06 - haversine formula*/
 }
