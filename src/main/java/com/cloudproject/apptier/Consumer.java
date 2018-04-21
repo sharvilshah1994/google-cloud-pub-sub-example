@@ -14,7 +14,7 @@ public class Consumer  implements MessageReceiver{
 
     @Override
     public void receiveMessage(PubsubMessage pubsubMessage, AckReplyConsumer ackReplyConsumer) {
-        LOGGER.info("Message Received: " + pubsubMessage.getData().toStringUtf8());
+        LOGGER.info(String.format("Message Received: %s", pubsubMessage.getData().toStringUtf8()));
         ackReplyConsumer.ack();
     }
 }
