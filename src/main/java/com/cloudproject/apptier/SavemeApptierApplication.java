@@ -15,8 +15,10 @@ public class SavemeApptierApplication {
 
 	private static final String REQUEST_SUB = "request-sub";
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 		SpringApplication.run(SavemeApptierApplication.class, args);
+		Producer producer = new Producer();
+		producer.publish("Message");
 		startSubscriber();
 	}
 
